@@ -12,7 +12,8 @@ stages:
   - stage: Build
     displayName: Build stage
     jobs:
-    - job:
+    - job: 
+      displayName: Agent job 1
       steps:
       - task: CopyFiles@2
         inputs:
