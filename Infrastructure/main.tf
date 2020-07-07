@@ -1,6 +1,9 @@
 terraform {
   backend "azurerm" {
-    
+    storage_account_name = "az204300sa"
+    container_name       = "serverless"
+    key                  = "terraform.tfstate"
+
   }
 }
 provider "azurerm"{
