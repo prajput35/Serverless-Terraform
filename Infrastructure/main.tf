@@ -1,11 +1,10 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "AZ204-300"
-    storage_account_name = "az204300sa"
-    container_name       = "serverless"
-    key                  = "terraform.tfstate"
-
-  }
+        storage_account_name = "__terraformstorageaccount__"
+        container_name       = "terraform"
+        key                  = "terraform.tfstate"
+	    access_key  ="__storagekey__"
+  	}
 }
 #provider
 provider "azurerm"{
